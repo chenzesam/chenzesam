@@ -21,6 +21,7 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
+      
     - name: yuque to readme
       uses: RaoHai/yuque2Readme@1.0.4
       with:
@@ -39,15 +40,9 @@ jobs:
         # Which file to write
         yuque-output-file: README.md
 
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
-
-    # Runs a set of commands using the runners shell
-    - name: Run a multi-line script
-      run: |
-        echo Add other actions to build,
-        echo test, and deploy your project.
+    - name: Result
+      run: |-
+        cat README.skylark.md
     
     - name: Commit and push if changed
       run: |-
