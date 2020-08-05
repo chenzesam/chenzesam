@@ -28,7 +28,7 @@ jobs:
         # secrets.YUQUE_TOKEN. 语雀的 token，去 https://www.yuque.com/settings/tokens 里找。需要读取你的知识库和文档。
         yuque-token: ${{secrets.YUQUE}}
         # 填你自己的空间标识。比如语雀的博客是： `yuque/blog`
-        yuque-namespace: /chenzesam/cd5hio
+        yuque-namespace: chenzesam/cd5hio
         # 是否只列出已发布的文章
         yuque-doc-public-only: true
         # 最多列出几条
@@ -48,7 +48,7 @@ jobs:
       run: |-
         git add .
         git diff
-        git config --global user.email "github-action-bot@example.com"
-        git config --global user.name "GitHub Action Bot"
+        git config --global user.email "chenzesam@gmail.com"
+        git config --global user.name "chenzesam"
         git commit -m "Updated README" -a || echo "No changes to commit"
         git push
