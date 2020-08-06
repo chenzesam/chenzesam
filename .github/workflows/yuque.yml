@@ -34,9 +34,9 @@ jobs:
         # Which file to write
         yuque-output-file: README.md
 
-    - name: Result
-      run: |-
-        cat README.skylark.md
+#     - name: Result
+#       run: |-
+#         cat README.skylark.md
 
     - name: Commit and push if changed
       run: |-
