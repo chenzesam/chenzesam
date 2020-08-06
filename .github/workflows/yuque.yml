@@ -21,9 +21,9 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-      
+
     - name: yuque to readme
-      uses: RaoHai/yuque2Readme@1.0.4
+      uses: RaoHai/yuque2Readme@1.0.2
       with:
         # secrets.YUQUE_TOKEN. 语雀的 token，去 https://www.yuque.com/settings/tokens 里找。需要读取你的知识库和文档。
         yuque-token: ${{secrets.YUQUE}}
@@ -31,24 +31,18 @@ jobs:
         yuque-namespace: chenzesam/cd5hio
         # 是否只列出已发布的文章
         yuque-doc-public-only: true
-        # 最多列出几条
-        yuque-doc-limit: 5
-        # 按什么字段排序
-        yuque-doc-order-by: updated_at
-        # Template for generate output
-        # yuque-template-file: README.template.md
         # Which file to write
         yuque-output-file: README.md
 
     - name: Result
       run: |-
         cat README.skylark.md
-    
+
     - name: Commit and push if changed
       run: |-
         git add .
         git diff
-        git config --global user.email "chenzesam@gmail.com"
-        git config --global user.name "chenzesam"
+        git config --global user.email "github-action-bot@example.com"
+        git config --global user.name "GitHub Action Bot"
         git commit -m "Updated README" -a || echo "No changes to commit"
         git push
