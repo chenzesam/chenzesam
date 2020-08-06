@@ -31,6 +31,7 @@ jobs:
         yuque-namespace: chenzesam/cd5hio
         # 是否只列出已发布的文章
         yuque-doc-public-only: true
+        yuque-doc-limit: 5
         # Which file to write
         yuque-output-file: README.md
 
@@ -42,7 +43,7 @@ jobs:
       run: |-
         git add .
         git diff
-        git config --global user.email "github-action-bot@example.com"
-        git config --global user.name "GitHub Action Bot"
+        git config --global user.email "chenzesam@gmail.com"
+        git config --global user.name "chenzesam"
         git commit -m "Updated README" -a || echo "No changes to commit"
         git push
