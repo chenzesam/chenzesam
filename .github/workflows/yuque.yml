@@ -36,7 +36,7 @@ jobs:
         # 按什么字段排序
         yuque-doc-order-by: updated_at
         # Template for generate output
-        yuque-template-file: README.template.md
+        # yuque-template-file: README.template.md
         # Which file to write
         yuque-output-file: README.md
 
