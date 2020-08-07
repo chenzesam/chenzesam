@@ -35,6 +35,7 @@ jobs:
         yuque-output-file: README.md
         # Template for generate output
         yuque-template-file: README.template.md
+        yuque-doc-limit: 5
 
 #     - name: Result
 #       run: |-
