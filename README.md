@@ -1,9 +1,8 @@
 <h2>Hi, 我是世界</h2>
 
 <h4> Latest Blog Posts: </h4>
-
-- [拒绝“很棒” ( 07-07 · 7 颗稻谷)](https://yuque.com/chenzesam/cd5hio/ac6h23)
-- [算法总结 ( 07-06 · 0 颗稻谷)](https://yuque.com/chenzesam/cd5hio/ic8afh)
+  - [拒绝“很棒” ( 07-07 · 7 颗稻谷)](https://yuque.com/chenzesam/cd5hio/ac6h23)
+  - [算法总结 ( 07-06 · 0 颗稻谷)](https://yuque.com/chenzesam/cd5hio/ic8afh)
   - [二零二零年七月 - 输入输出 ( 06-29 · 0 颗稻谷)](https://yuque.com/chenzesam/cd5hio/ybya5f)
   - [二零二零年七月 - 输入输出 ( 06-28 · 0 颗稻谷)](https://yuque.com/chenzesam/cd5hio/bp9sav)
   - [快与慢 - 六顶思考帽 ( 03-14 · 0 颗稻谷)](https://yuque.com/chenzesam/cd5hio/bvriry)
