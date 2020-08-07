@@ -2,7 +2,7 @@
 
 <h4> Latest Blog Posts: </h4>
 
-{{#each record}}
+{{#each_upto record 5}}
   - [{{title}}](https://yuque.com/{{@root.namespace}}/{{slug}})
 {{/each}}
 
